@@ -8,6 +8,7 @@ h1{
 }
 .kartu-provil{
   width: 300px;
+  margin: 50px auto;
   height: auto;
   padding: 20px;
   background-color: white;
@@ -15,7 +16,7 @@ h1{
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   text-align: center; 
 }
-.kartu-provil{
+.kartu-provil img{
   width: 150px;
   border-radius: 50%;
 }
