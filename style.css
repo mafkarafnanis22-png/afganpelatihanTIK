@@ -1,21 +1,64 @@
-body{
+/* BODY - PUSAT VERTIKAL & HORIZONTAL */
+body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f0f0f0;
   color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;          /* ← INI KUNCI! */
+  justify-content: center; /* ← PUSAT HORIZONTAL */
+  align-items: center;     /* ← PUSAT VERTIKAL */
+  min-height: 100vh;       /* ← ISI SELURUH LAYAR */
 }
-h1{
-  text-align: center;
-}
-.kartu-provil{
+
+/* KARTU - UDAH BAGUS, TAPI DIUPLOAD */
+.kartu-provil {
   width: 300px;
-  margin: 50px auto;
-  padding: 20px;
+  padding: 30px;           /* ↑ Lebih lega */
   background-color: white;
   border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  text-align: center; 
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15); /* ↑ Shadow lebih soft */
+  text-align: center;
 }
-.kartu-provil img{
+
+/* GAMBAR - DIUPLOAD KE ATAS */
+.kartu-provil img {
   width: 150px;
-  border-radius: 20%;
+  height: 150px;           /* ← TETAP BULAT */
+  border-radius: 50%;      /* ← BULAT SEMPURNA */
+  object-fit: cover;       /* ← Foto ga pecah */
+  margin-bottom: 20px;
+}
+
+/* LINK - JADI TOMBOL */
+.kartu-provil a {
+  display: inline-block;
+  margin: 15px 0;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: background 0.3s;
+}
+
+.kartu-provil a:hover {
+  background-color: #0056b3;
+}
+
+/* BUTTON - CANTIK */
+#websekolah {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  transition: background 0.3s;
+}
+
+#websekolah:hover {
+  background-color: #218838;
 }
